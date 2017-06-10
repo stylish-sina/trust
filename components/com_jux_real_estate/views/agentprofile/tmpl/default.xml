@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="My Profile">
+		<message>
+			<![CDATA[List Layout Description]]>
+		</message>
+	</layout>
+	<state>
+		<name>My Profile</name>
+		<description>My Profile Description</description>
+	</state>
+</metadata>

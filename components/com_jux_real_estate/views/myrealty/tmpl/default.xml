@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="My Realty">
+		<message>
+			<![CDATA[My Realty Layout Description]]>
+		</message>
+	</layout>
+	<state>
+		<name>My Realty</name>
+		<description>My Realty</description>
+	</state>
+	<fieldset name="basic">
+		<field 
+			name="display_num" 
+			type="text" 
+			size="3" 
+			default="5" 
+			label="Display num" 
+			description="Display num" />
+	</fieldset>
+</metadata>

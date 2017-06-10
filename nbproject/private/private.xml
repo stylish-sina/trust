@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>components/com_jux_real_estate/views/addagent/tmpl/default_confirmagent.php</url>
+            <bookmark id="1">
+                <name/>
+                <line>370</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/www/svn_server/svn/JUXTemplates/2015/Citilights/dev/components/com_jux_real_estate/controllers/agent.php</file>
+            <file>file:/D:/www/svn_server/svn/JUXTemplates/2015/Citilights/dev/components/com_jux_real_estate/views/agentplan/tmpl/default.php</file>
+            <file>file:/D:/www/svn_server/svn/JUXTemplates/2015/Citilights/dev/plugins/jspayment/paypal/paypal.php</file>
+            <file>file:/D:/www/svn_server/svn/JUXTemplates/2015/Citilights/dev/components/com_jux_real_estate/models/addagent.php</file>
+            <file>file:/D:/www/svn_server/svn/JUXTemplates/2015/Citilights/dev/components/com_jux_real_estate/views/addagent/tmpl/default.php</file>
+            <file>file:/D:/www/svn_server/svn/JUXTemplates/2015/Citilights/dev/language/en-GB/en-GB.com_jux_real_estate.ini</file>
+            <file>file:/D:/www/svn_server/svn/JUXTemplates/2015/Citilights/dev/components/com_jux_real_estate/views/agentplan/view.html.php</file>
+            <file>file:/D:/www/svn_server/svn/JUXTemplates/2015/Citilights/dev/components/com_jux_real_estate/models/agentplan.php</file>
+        </group>
+    </open-files>
+</project-private>

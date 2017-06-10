@@ -1,0 +1,1982 @@
+/**
+ * @package Helix Framework
+ * @author JoomShaper http://www.joomshaper.com
+ * @copyright Copyright (c) 2010 - 2014 JoomShaper
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+
+@import 'variables';
+@import 'mixins';
+
+
+// Anchor
+a{
+	color: @major_color;
+	&:hover {
+		color: darken(@major_color, 10%);
+	}
+}
+
+// Megamenu 
+.sp-megamenu-parent {
+	>li {
+		&.active>a,
+		&:hover>a {
+			color: #333;
+		}
+	}
+
+	.sp-dropdown{
+		li.sp-menu-item {
+			>a {
+
+				&:hover {
+					background: #f5f5f5;
+				}
+			}
+			&.active>a {
+				color: @major_color;
+			}
+		}
+	}
+
+}
+
+// Off Canvas
+#offcanvas-toggler {
+	>i {
+		color: @text_color;
+		&:hover {
+			color: @major_color;
+		}
+	}
+}
+
+//Button
+.btn-primary,
+.sppb-btn-primary {
+	border-color: darken(@major_color, 6%);
+	background-color: @major_color;
+
+	&:hover {
+		border-color: darken(@major_color, 15%);
+		background-color: darken(@major_color, 10%);
+	}
+}
+
+// Topbar Social
+ul.social-icons {
+
+	>li {
+
+		a {
+
+			&:hover {
+				color: @major_color;
+			}
+		}
+	}
+}
+
+// Page Title
+.sp-page-title {
+	background: @major_color;
+}
+
+// Body Innerwrapper
+
+.layout-boxed .body-innerwrapper {
+	background: none;
+	/*background: @bg_color;*/
+}
+
+// Module
+.sp-module {
+	ul {
+		>li {
+			>a {
+				color: @text_color;
+				&:hover {
+					color: @major_color;
+				}
+			}
+		}
+	}
+
+	.latestnews {
+		>div {
+			>a {
+				color: @text_color;
+				&:hover {
+					color: @major_color;
+				}
+			}
+		}
+	}
+
+	.tagscloud {
+		.tag-name {
+			&:hover {
+				background: @major_color;
+			}	
+		}
+	}
+}
+
+// sp Simple Portfolio
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li.active > a,
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li > a:hover {
+	background: @major_color;
+}
+
+// Search
+.search {
+	.btn-toolbar {
+		button {
+			background: @major_color;
+		}
+	}
+}
+
+
+// Blog
+.post-format {
+	background: @major_color;
+}
+
+.voting-symbol{
+	span.star.active:before{
+		color: @major_color;
+	}
+}
+
+.sp-rating {
+	span.star:hover:before,
+	span.star:hover ~ span.star:before {
+		color: darken(@major_color, 10%);
+	}
+}
+
+.entry-link,
+.entry-quote {
+	background: @major_color;
+}
+
+blockquote {
+	border-color: @major_color;
+}
+
+.carousel-left,
+.carousel-right {
+
+	&:hover {
+		background: @major_color;
+	}
+}
+
+// Footer
+#sp-footer {
+	background: @major_color;
+}
+
+// Comingsoon
+.sp-comingsoon body {
+	background-color: @major_color;
+}
+
+// Pagination 
+.pagination>li>a,
+.pagination>li>span {
+	color: @text_color;
+	&:hover,
+	&:focus {
+		color: @text_color;
+	}
+}
+
+.pagination>.active>a,
+.pagination>.active>span {
+	border-color: @major_color;
+	background-color: @major_color;
+	&:hover,
+	&:focus {
+		border-color: @major_color;
+		background-color: @major_color;
+	}
+}
+
+//button-slideshow
+#slideshow{
+	.jux-slider{
+		.caroufredsel_wrapper{
+			.sliders{
+				.slide-item{
+					.slide-caption{
+						.slide-caption-action{
+							a{
+								background-color: @bg_color;
+								color: @text_color;
+								&:hover{
+									background-color: @major_color !important;
+									color: #fff;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=====Menu-Top-Bar-Off-Canvas=====*/
+#sp-top-bar {
+ 	.container{
+ 		.row{
+		 	#sp-top2{	
+		 		ul.sp-contact-info{
+		 			.sp-contact-email{
+					    a{
+					    	&:hover{
+					    		color: @major_color;
+					    	}
+					    }
+		 			}
+		 		}
+		 		.sp-module{
+			 		.noologin{
+			 			li{
+			 				a{
+			 					&:hover{
+			 						color: @major_color;
+			 					}
+			 				}
+			 			}
+			 		}
+			 	}	
+		 	}
+		} 	
+	}	
+}
+ul.social-icons{
+	.fa{
+	  	&:hover{
+	  		color: @major_color !important;
+	  	}
+	}
+}
+.sp-menu-right{
+	.sp-dropdown-inner{
+		.sp-dropdown-items{
+			.sp-menu-item{
+				a{
+					&:hover{
+						color: @major_color !important;
+					}
+				}
+			}
+		}
+	}
+	.sp-dropdown-items{
+		&:before{
+			border-bottom: 7px solid @major_color;
+		}
+		.sp-dropdown-sub{
+			.sp-dropdown-inner{
+				.sp-dropdown-items{
+					.sp-menu-item{
+						a{
+							&:hover{
+								color: @major_color !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.offcanvas-menu{
+	.offcanvas-inner{
+		ul.menu{
+			li{
+				a{
+					&:hover{
+						color: @major_color;
+					}
+				}
+			}
+		}
+	}		
+}
+/*=====Log-in-Log-out-Register-Form=====*/
+.login{
+	form{
+		.form-group{
+			.btn{
+				background-color: @bg_color !important;
+				border-color: @bg_color !important;
+				color: @text_color !important;
+				&:hover{
+					background-color: @major_color !important;
+					border-color: @major_color !important; 
+				}
+			}
+		}
+	}
+}
+.form-links{
+	ul{
+		li{
+			a{
+				&:hover{
+					color: @major_color;
+				}
+			}
+		}
+	}
+}
+.noologin-fieldset{
+	.noologout-button{
+		.btn{
+			background-color: @major_color !important;
+			border: @major_color !important;
+		}
+	}
+}
+.registration{
+	.form-group{
+		button{
+			background-color: @bg_color;
+			border-color: @bg_color;
+			color: @text_color;
+			&:hover{
+				background-color: @major_color;
+				border-color: @major_color;
+			}
+		}
+	}
+}
+
+#sp-callaction{
+	.calling-info{
+	    .fa{
+			color: @major_color;
+		}
+	}
+}	
+
+/*=====Home-slideshow=====*/
+#slideshow{
+	.jux-slider{
+		.caroufredsel_wrapper{
+			.sliders{
+				.slide-item{
+					.slide-caption{
+						.slide-caption-action{
+							a{
+								background-color: @bg_color;
+								color: @text_color;
+								&:hover{
+									background-color: @major_color !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#sp-slideshow{
+	.sp-module-content{
+		#realty-search-horizontal{
+			#ZJSearchForm{
+				.jux-search-form{
+					.price-field{
+						#price_slider{
+							.noUi-origin{
+								background-color: @major_color !important;
+							}
+						}
+					}
+					.area-field{
+						#area_slider{
+							.noUi-origin{
+								background-color: @major_color !important;
+							}
+						}
+					}
+				}
+				.box-right{
+					.search-button{
+						input{
+							&:hover{
+								background-color: @major_color !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=====Home-Search-box=====*/
+#search-box{
+    &:before{
+		  background: @major_color;
+    }
+    .sppb-container{
+    	.sppb-row{
+			.search-form{
+				#ZJSearchForm{
+					.jux-search-form{
+					  	.area-field{
+					  		#area_slider{
+					  			.noUi-connect{
+					  				background: @major_color;;
+					  			}
+					  		}
+					  	}
+					  	.price-field{
+					  		#price_slider{
+					  			.noUi-connect{
+					  				background: @major_color;
+					  			}
+					  		}
+					  	}
+					}
+					.box-right{
+						.advanced{
+							#advanced_btn{
+								color: @major_color !important;
+							}
+							#standard_btn{
+								color: @major_color !important;
+							}
+						}
+					}
+				}
+			}
+		}	
+	}	
+}
+
+#realty-search-horizontal{
+	#ZJSearchForm{
+		.box-right{
+			.search-button{
+				.btn{
+					background-color: @bg_color !important;
+					color: @text_color !important;
+					&:hover{
+						background-color: @major_color !important;
+					}
+				}
+			}			
+		}	
+	}
+}
+/*=====Home-Recent-Properties=====*/
+.recent-properties{	
+	.owl-controls{
+		.owl-buttons div{
+			background: @major_color !important;
+		}
+	}
+	.owl-wrapper-outer{
+		.owl-wrapper{
+			.owl-item{
+				.mod-properties{
+					.realty-image{
+						.status{
+							.type{
+								&:hover{
+									color: @major_color !important;
+								}
+							}    
+						}
+					}
+					.realty-wrap{
+						.realty-title{
+							a{
+								&:hover{
+									color: @major_color;
+								}
+							}
+						}
+						.realty-summary{
+							.realty-info{
+								.realty-action{
+									a{
+										background-color: @bg_color;
+										color: @text_color;
+										&:hover{
+										    	background-color: @major_color !important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*=====Home-Featured-Properties=====*/			
+.featured-properties{
+	.owl-controls{
+		.owl-buttons div{
+			background: @major_color;
+		}
+	}		
+	.owl-wrapper-outer{
+		.owl-wrapper{
+			.owl-item{
+				.mod-properties{
+					.realty-image{
+						.status{
+							background-color: @major_color;
+						}
+					}
+					.realty-wrap{
+						.realty-title{
+						 	a{
+								&:hover{
+									color: @major_color;
+								}
+							}
+						}
+						.realty-summary{
+							.realty-detail{
+								.fa{
+									color: @major_color;
+								}
+							}
+							.realty-info{
+								.realty-action{
+									a{
+										background-color: @bg_color;
+										color: @text_color;
+										&:hover{
+											background-color: @major_color !important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*=====Home-Our-Services=====*/
+#our-services{
+    &:before{
+		background: @major_color;
+    }
+}		
+
+
+/*=====Home-Meet-Our-Agents=====*/		
+#meet-our-agents{
+	.meet-agents{
+		.owl-controls{
+			.owl-buttons div{
+				background: @major_color;
+			}
+		}
+		.ouragents-title{
+			a{
+				&:hover{
+					color: @major_color;
+				}
+			}
+		}
+		.ouragents-ion{
+			a{
+				&:hover{
+					background-color:@major_color;
+				}
+			}
+		}
+	}
+}
+
+/*=====Home-Call-To-Action=====*/
+#call-to-action{
+    &:before{
+		background: @major_color;
+    }
+    .sub-call-to-action{
+	    .sppb-row{
+	    	.sppb-text-right{
+    			.sppb-btn{
+		    		background-color: @bg_color !important;
+		    		color: @text_color !important;
+		    		border-color: @bg_color !important;
+		    	}
+	    	}
+	    }
+    }
+}
+
+
+/*=====Home-Testimonial=====*/
+#testimonial-pro{
+	.testimonial{
+		.sppb-carousel-indicators{
+    		.active{
+	    		background-color: @major_color;
+   			 }
+		}
+	}
+}
+/*=====Footer=====*/
+#sp-footer-top{
+    &:before{
+		background: @major_color;
+    }
+	.row{
+		#sp-footer2{
+			.recent-property-footer{
+				.sp-module-content{
+					.sidebar-layout{
+						.realty-item{
+							.realty-wrap{
+								.realty-title{
+									a{
+									    &:hover{
+									    	color: @bg_color;
+									    }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#sp-footer3{
+			ul.menu{
+				li{
+					a{
+						&:hover{
+							color: @bg_color;
+						}
+					}
+				}
+			}
+		}
+
+		#sp-footer4{
+			ul.detail-contact-info{
+				li{
+					a{
+					  	&:hover{
+					  		color: @bg_color !important;
+					  	}
+					}
+				}
+			}
+		}
+	}	
+}	
+
+#sp-footer-bottom{
+	background-color: @major_color;
+	.row{
+		#sp-footer5{
+			.copyright {
+			  	.back-to-top{
+				  	.fa-angle-up{
+					    color: @major_color;
+				  	}
+				}
+			  	.text-block{
+					a{
+					  	&:hover{
+					  		color: @major_color;
+					  	}
+					}
+			  	}
+			}
+		}
+	}	
+}	
+
+/*=====Home-Map-Search-Box=====*/
+//Search-vertical
+#search-map{
+	.search-map-vertical{
+		h1{
+		    background-color: @major_color;
+		    &:before{
+			    background-color: @major_color !important;
+		    }
+		}
+		#ZJSearchForm {
+		  input{
+			  &:hover{
+			  	background-color: @major_color;
+			  }
+			}
+		  	.jux-search-form{
+			  	.area-field{
+			  		#area_slider{
+			  			.noUi-connect{
+			  				background: @major_color;
+			  			}
+			  		}
+			  	}
+			  	.price-field{
+			  		#price_slider{
+			  			.noUi-connect{
+			  				background: @major_color;
+			  			}
+			  		}
+			  	}
+		  	}
+  		}
+	}
+}
+
+//Search-horizontal
+#search-map{
+	.search-map-horizontal{
+		h1{
+		    background-color: @major_color;
+		    &:before{
+			    background-color: @major_color;
+		    }
+		}
+	  	.jux-search-form{
+		  	.area-field{
+		  		#area_slider{
+		  			.noUi-connect{
+		  				background: @major_color;
+		  			}
+		  		}
+		  	}
+		  	.price-field{
+		  		#price_slider{
+		  			.noUi-connect{
+		  				background: @major_color;
+		  			}
+		  		}
+		  	}
+		}
+	}
+}
+
+
+/*=====Home-Map-Recent-Properties-Map=====*/
+.recent-properties-map{
+	.owl-controls{
+		.owl-buttons div{
+			background: @major_color;
+		}
+	}
+}
+
+.recent-properties-map{
+	.owl-wrapper-outer{
+		.owl-item{
+			.real_slider{
+				.overlay{
+					.real_des{
+						.real_price{
+							background-color: @major_color !important;
+						}
+						h3{
+							a{
+								&:hover{
+									color: @major_color !important;
+								}
+							}
+						}
+					}
+				}
+				.status{
+					.type{
+						&:hover{
+							color: @major_color !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*=====Properties-List-With-Sidebar=====*/	
+body.view-realties{
+	#sp-component{
+		#products{
+			.list-style{
+				.realty-image{
+					.thumb-holder{
+						.status{
+						    .type{
+								&:hover{
+									color: @major_color !important;
+								}
+						    }
+						}
+					}
+				}	
+				.realty-wrap{
+					.realty-title{
+						a{
+							&:hover{
+								color: @major_color;
+							}
+						}
+					}
+					.realty-summary{
+						.realty-info{
+							.realty-action{
+								a{
+									background-color: @bg_color;
+									color: @text_color;
+									&:hover{
+										background-color: @major_color !important;
+									}
+								}
+							}
+						}	
+					}
+				}
+			}	
+		}
+	}	
+}	
+.recent-property-right{
+	.sp-module-content{
+		.sidebar-layout{
+			.mod-properties{
+				.realty-wrap{
+					.realty-type{
+						color: @major_color;
+					}
+					.realty-title{
+						a{
+						    &:hover{
+						    	color: @major_color !important;
+						    }
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+.pagination{
+	li{
+		a{
+			color: @major_color !important;
+		}
+	}
+}
+/*=====Properties-List-No-Sidebar=====*/			
+#sp-slideshow{
+	.search-list-no-sidebar{
+		h3{
+		    background-color: @major_color;
+			&:before{
+			    background-color: @major_color;
+			}
+		}
+	}
+}
+
+/*=====Properties-Grid-With-Sidebar=====*/	
+#products{	
+	.grid-style{
+		.realty-image{
+			.thumb-holder{
+				.status{	
+					.type{
+						&:hover{
+							color: @major_color;
+						}
+					}
+				}
+			}	
+		}
+		.realty-wrap{
+			.realty-title{
+				a{
+					&:hover{
+						color: @major_color;
+					}
+				}
+			}
+			.realty-summary{
+				.realty-info{
+					.realty-action{
+						a{
+							background-color: @bg_color;
+							color: @text_color;
+							&:hover{
+								background-color: @major_color !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}	
+
+/*=====Properties-Details=====*/
+.agent-property{
+	.agents{
+		.right-content{
+			.form-action{
+				button{
+					&:hover{
+						background-color: @major_color;
+					}
+				}
+			}
+		}
+	}
+	.agent-more-properties{
+		.owl-controls{
+			.owl-buttons div{
+				background: @major_color;
+			}
+		}
+		.owl-wrapper-outer{
+			.owl-wrapper{
+				.owl-item{
+					.real_slider{
+						.overlay{
+							.real_des{
+								.real_price{
+									background-color: @major_color;
+								}
+								a{
+									&:hover{
+										color: @major_color;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}			
+	}
+}	
+
+.realty-item-details{
+	.realty-social{
+	 	a{
+		    &:hover{
+		    	background-color: @major_color !important;
+		    }
+		}    
+	} 
+}
+
+
+/*=====Features-Blog=====*/
+.sidebar-right{
+	.form-search {
+		.finder{ 
+			input{
+		  		&:focus{
+					border-color: @major_color;
+					box-shadow: 0 0 6px @major_color;
+					color: @major_color;
+				}
+		  	}
+		}
+	}
+}	
+
+#sp-left{
+	.sidebar-left{
+		.form-search {
+			.finder{ 
+				input{
+		  			&:focus{
+						border-color: @major_color;
+						box-shadow: 0 0 6px @major_color;
+						color: @major_color;
+					}
+		  		}
+		  	}
+		}
+	}	
+}
+
+	
+.sp-module .category-module >li >a{
+	&:hover{
+		color: @major_color;
+	}
+}
+
+.tagspopular ul >li{
+	  &:hover{
+	  	background-color: @major_color;
+	  }
+}
+
+.items-leading{
+	.entry-header h2 a {
+	   	&:hover{
+	   		color: @major_color;
+	   	}
+	}
+}
+
+.items-row{
+	.entry-header h2 a {
+	   	&:hover{
+	   		color: @major_color;
+	   	}
+	}
+}
+
+
+table.mod_minical_table td#mod_minical_today {
+ 	background-color: @major_color;
+}
+
+
+.readmore{
+	.btn-default {
+  		&:hover{
+  			background-color: @major_color;
+  		  	border-color: @major_color;
+  			color: #fff !important;
+  		}
+  	}	
+}
+ul.pager{
+	li{
+		a{
+			color: @major_color;
+		}
+	}
+}
+
+/*=====Agent=====*/
+.jux-agents-listing{ 
+	.agents-listing{
+		.agent-item{
+			.rightcontent{
+				.agent-summary{
+					.agent-desc{
+						.agent-social{
+							a{
+								&:hover{
+									background-color: @major_color !important;
+								}
+							}
+						}
+						.agent-action{
+							a{
+								background-color: @bg_color !important;
+								color: @text_color !important;
+								&:hover{
+									background-color: @major_color !important;
+								}	
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.agents{
+	.left-content{
+		.agent-info{
+			.leftcontent{
+				.agent-image{
+					.agent_link{
+					}
+				}
+			}
+			.rightcontent{
+				.agent-wrap{
+					.agent-summary{
+						.agent-desc{
+							.social-list{
+								a{
+									&:hover{
+										background-color: @major_color !important;
+									}
+								}
+							}
+							.agent-action{
+								a{
+									background-color: @bg_color !important;
+									color: @text_color !important;
+									&:hover{
+										background-color: @major_color !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#sp-right{
+	.sp-module-content{
+		#ZJSearchForm {
+		  input{
+			  	&:hover{
+			  		background-color: @major_color;
+			  	}
+			}
+		  	.jux-search-form{
+			  	.area-field{
+			  		#area_slider{
+			  			.noUi-connect{
+			  				background: @major_color;
+			  			}
+			  		}
+			  	}
+			  	.price-field{
+			  		#price_slider{
+			  			.noUi-connect{
+			  				background: @major_color;
+			  			}
+			  		}
+			  	}
+		  	}
+  		}
+	}
+}
+.contact-agent{
+	input{
+		&:focus{
+			border-color: @major_color;
+			box-shadow: 0 0 6px @major_color;
+			color: @major_color;
+		}
+	}
+	textarea{
+		&:focus{
+			border-color: @major_color;
+			box-shadow: 0 0 6px @major_color;
+			color: @major_color;
+		}
+	}
+	#conactagentform{
+		.form-group{
+			.btn-info{
+				&:hover{
+					background-color: @major_color !important;
+				}
+			}
+		}	
+	}
+}
+
+.agent-details{
+	.agent-social{
+		a{
+			&:hover{
+				background-color: @major_color;
+			}
+		}
+	}
+	.realties-listing{
+		.list-style{
+			.realty-image{
+				.thumb-holder{
+					.status{
+					    .type{
+							&:hover{
+								color: @major_color !important;
+							}
+					    }
+					}
+				}
+			}	
+			.realty-wrap{
+				.realty-title{
+					a{
+						&:hover{
+							color: @major_color;
+						}
+					}
+				}
+				.realty-summary{
+					.realty-info{
+						.realty-action{
+							a{
+								background-color: @bg_color !important;
+								color: @text_color !important;
+								&:hover{
+									background-color: @major_color !important;
+								}
+							}
+						}
+					}	
+				}
+			}
+		}	
+	}
+}	
+
+
+#agent_submit {
+ 	 &:hover{
+  	background-color: @major_color;
+  	}
+}
+
+/*=====Submit=====*/
+.text-center{
+	.form-group{
+		.btn{
+			background-color: @major_color !important;
+			border-color: @major_color !important;
+		}
+	}
+}
+
+
+.my-properties{
+	.property-content{
+		.property-wrap{
+			.property-title{
+				a{
+					&:hover{
+						color: @major_color;
+					}
+				}
+			}
+			.property-summary{
+				.property-info{
+					.property-action{
+						.agent-action{
+							a{
+								&:hover{
+									background-color: @major_color;
+								}	
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+.agentprofile{
+	.agentprofile-left{
+		.agentprofile-left-wrapper{
+			.agentprofile-left-menu{
+				.agentprofile-info{
+					.agentprofile-submit{						
+						a{
+							background-color: @bg_color;
+							border-color: @bg_color;
+							color: @text_color;
+							&:hover{
+								background-color: @major_color;
+							}
+						}	
+					}
+				}
+				.sidebar-content{
+					.submit-paypal{
+						.btn{
+							a{
+								background-color: @bg_color;
+								border-color: @bg_color;
+								color: @text_color;
+								&:hover{
+									background-color: @major_color;
+								}
+							}
+						}	
+					}
+					.package-info{
+						a{
+							color: @major_color;
+						}
+					}
+				}
+			}
+		}
+	}
+	.agentprofile-right{
+		.agentprofile-content{
+			form{
+				.agentprofile-group{
+					.control-group{
+						.controls{
+							.input-prepend{
+								.btn{
+									color: @major_color !important;
+								}
+							}
+						}
+					}
+				}
+				.agent-submit{
+					.btn{
+						background-color: @bg_color;
+						color: @text_color;
+						&:hover{
+							background-color: @major_color;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//My Properties
+.myproperty-left{
+	.myproperty-left-wrapper{
+		.myproperty-left-menu{
+			.myproperty-submit{
+				a{
+					background-color: @bg_color;
+					border-color: @bg_color;
+					color: @text_color;
+					&:hover{
+						background-color: @major_color;
+					}
+				}
+			}
+		}
+	}
+}
+.my-properties{
+	.navbar-inner{
+		.nav{
+			li{
+				a{
+					color: @major_color;
+				}
+			}
+		}
+	}
+}	
+//submit property
+.alert-message{
+	background-color: @major_color;
+}
+.submitproperty-left{
+	.submitproperty-left-wrapper{
+		.submitproperty-left-menu{
+			.submitproperty-submit{
+				a{
+					background-color: @bg_color;
+					border-color: @bg_color;
+					color: @text_color;
+					&:hover{
+						background-color: @major_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.submitproperty-left{
+	.submitproperty-left-wrapper{
+		.submitproperty-submit{
+			a{
+				&:hover{
+					background-color: @major_color;
+				}
+			}
+		}
+	}
+}
+.submitproperty{
+	form{
+		.submitproperty-content{
+			.submitproperty-group{
+				.group-container{
+					.control-group{
+						.controls{
+							#editor-xtd-buttons{
+								a{
+									background-color: @bg_color;
+									color: @text_color;
+									border-color: @bg_color;
+									&:hover{
+										background-color: @major_color;
+										border-color: @major_color;
+									}
+								}
+							}
+						}
+					}
+					.formelm-buttons{
+						.btn{
+							background-color: @major_color;
+							border-color: @major_color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//add-agent
+#jse_purchase-form{
+	.agentprofile-content{
+		.agentprofile-group{
+			.validate{
+				background-color: @bg_color;
+				color: @text_color;
+				&:hover{
+					background-color: @major_color;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+/*=====Contact=====*/
+.sppb-col-sm-8{
+	.contact-form{
+		form{
+			div{
+				input{
+					&:focus{
+						border-color: @major_color !important;
+						box-shadow: 0 0 6px @major_color !important;
+						color: @major_color !important;
+					}
+				}
+				textarea{
+					&:focus{
+						border-color: @major_color !important;
+						box-shadow: 0 0 6px @major_color !important;
+						color: @major_color !important;
+					}
+				}
+			}
+			button{
+				background-color: @bg_color;
+				color: @text_color;
+				&:hover{
+					background-color: @major_color;
+				}
+			}
+		}
+	}
+}	
+
+.sppb-col-sm-4{
+	.search-contact{
+		.form-search {
+			.finder{ 
+				input{
+			  		&:focus{
+						border-color: @major_color;
+						box-shadow: 0 0 6px @major_color;
+						color: @major_color;
+					}
+			  	}
+			}
+		}
+	}
+	.recent-posts-contact{
+		.recent-posts{
+	    	li{
+	    		a{
+	    			&:hover{
+	    				color: @major_color;
+	    			}
+	    		}
+	    	}
+		}
+	}
+	.tags-contact{
+		.tagspopular{ 
+			ul{
+				li{
+					&:hover{
+				  		background-color: @major_color;
+				  	}
+			  	}
+			} 
+		}
+	}
+}
+/*=====Contact-1=====*/
+#contact-1{
+	.contact1-form{
+		form{
+			div{
+				input{
+					&:focus{
+						border-color: @major_color;
+						box-shadow: 0 0 6px @major_color;
+						color: @major_color;
+					}
+				}
+				textarea{
+					&:focus{
+						border-color: @major_color;
+						box-shadow: 0 0 6px @major_color;
+						color: @major_color;
+					}
+				}
+			}
+			button{
+				background-color: @bg_color;
+				border: none;
+				color: @text_color;
+				&:hover{
+					background-color: @major_color;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+/**
+ * @package Helix V3 Framework
+ * @author JoomShaper http://www.joomshaper.com
+ * @copyright Copyright (c) 2010 - 2015 JoomShaper
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+ */
+
+/*=========================================
+ *======= 	 Megamenu	   ============
+ *=======================================*/
+.sp-megamenu-parent {
+	list-style: none;
+	padding: 0;
+	margin-top:-9px;
+	z-index: 9;
+	display: block;
+	float: left;
+	margin-left: 19px;
+	>li {
+		display: inline-block;
+		position: relative;
+		padding: 0;
+
+		&.menu-justify {
+			position: static;
+		}
+		
+		>a {
+			display: inline-block;
+			padding: 0 10px;
+			line-height: 90px;
+			font-size: 12px;
+			letter-spacing: 1px;
+			color: #333;
+		}
+		&.sp-has-child>a:after{
+			font-family: "FontAwesome";
+			content: " \f107";
+		}
+
+
+		&.active:hover>a{
+			color: #333 !important;
+		}
+		&:hover>a {
+			text-decoration: none;
+			color: #333 !important;
+		}
+		
+	}
+
+	.sp-mega-group {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		.sp-mega-group-child {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.sp-dropdown {
+		margin: 0;
+		position: absolute;
+		z-index: 10;
+		display: none;
+		width: 200px;
+  		margin-top: -12px;
+  		border-top: 2px solid @major_color;
+
+		.sp-dropdown-inner {
+			background: #fff;
+		}
+
+		.sp-dropdown-items {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			.sp-has-child>a:after{
+				font-family: "FontAwesome";
+				content: " \f105";
+				float: right;
+			}
+		}
+
+		&.sp-menu-center {
+			margin-left: 45px;
+		}
+		
+		&.sp-dropdown-main {
+			top: 100%;
+			&.sp-menu-right,
+			&.sp-menu-full {
+				left: 0;
+			}
+
+			&.sp-menu-left {
+				right: 0;
+			}
+		}
+
+		&.sp-dropdown-sub {
+			top: 0;
+			left: 100%;
+			.sp-dropdown-inner {
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			}
+		}
+
+		//List Item
+		li.sp-menu-item { //child sub
+			display: block;
+			padding: 0;
+			position: relative;
+			border-top: 1px solid #F1F0F0;
+			>a {
+				display: block;
+				padding: 10px;
+				color: #333;
+				cursor: pointer;
+
+				&.sp-group-title {
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+
+				&:hover {
+					color: @major_color;
+					text-decoration: none;
+				}
+			}
+
+			&.active>a {
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.sp-dropdown-mega {
+		>.row {
+			margin-top: 30px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+
+	//Has Child
+	.sp-has-child {
+		&:hover {
+			>.sp-dropdown {
+				display: block;
+			}
+		}
+	}
+
+	//Fade Animation
+	&.menu-fade {
+		.sp-has-child:hover {
+			>.sp-dropdown {
+				-webkit-animation: spMenuFadeIn 400ms;
+				animation: spMenuFadeIn 400ms;
+			}
+		}
+	}
+
+	//Zoom Animation
+	&.menu-zoom {
+		.sp-has-child:hover {
+			>.sp-dropdown {
+				-webkit-animation: spMenuZoom 400ms;
+				animation: spMenuZoom 400ms;
+			}
+		}
+	}
+
+	//Fade in up Animation
+	&.menu-fade-up {
+		.sp-has-child:hover {
+			>.sp-dropdown {
+				-webkit-animation: spMenuFadeInUp 400ms;
+				animation: spMenuFadeInUp 400ms;
+			}
+		}
+	}
+}
+
+
+
+/*=========================================
+ *======= 	Off Canvas   ============
+ *=======================================*/
+
+#offcanvas-toggler {
+	float: right;
+	line-height: 90px;	
+	>i {
+		display: inline-block;
+		padding: 0 0 0 10px;
+		font-size: 18px;
+		background: transparent;
+		margin: 5px 0 27px 0;
+		border-radius: 3px;
+		cursor: pointer;
+		.transition(~'color 400ms, background-color 400ms');
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+
+.close-offcanvas {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 1;
+	color: #000;
+	border: 2px solid #eee;
+	border-radius: 100%;
+	width: 22px;
+	height: 22px;
+	line-height: 18px;
+	text-align: center;
+	font-size: 12px;
+
+	&:hover {
+		background: #000;
+		color:#fff;
+	}
+}
+
+.offcanvas-menu {
+	width:  280px;
+	height: 100%;
+	background: #fff;
+	color: #999;
+	position: fixed;
+	top: 0;
+	opacity: 0;
+	z-index: 9999;
+	overflow-y: scroll;
+
+	.offcanvas-inner {
+		padding: 20px;
+		.sp-module {
+			margin-top: 20px;
+			ul {
+				> li{
+					border: none ;
+					a {
+						border-bottom: 1px dotted #e8e8e8;
+						.transition(300ms);
+						padding:4px 20px;
+						&:hover {
+							background: #f5f5f5;
+						}
+					}
+
+					>a:before  {
+						display: none;
+					}
+				}
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}			
+		}	
+		.sp-module .sp-module-content > ul {
+			margin:0 -20px;
+		}
+		.search {
+			margin-top: 25px;
+			input {
+				width: 100%;
+				border-radius: 0;
+				border: 1px solid #eee; 
+				box-shadow: none;
+				-webkit-box-shadow: none;
+			}
+		}
+	}
+}
+
+.ltr {
+
+	.offcanvas-menu {
+		-webkit-transition: opacity 400ms cubic-bezier(0.7,0,0.3,1), right 400ms cubic-bezier(0.7,0,0.3,1);
+		transition: opacity 400ms cubic-bezier(0.7,0,0.3,1), right 400ms cubic-bezier(0.7,0,0.3,1);
+	}
+
+	.body-innerwrapper:after {
+		right: 0;
+	}
+
+	.offcanvas-menu {
+		right: -280px;
+	}
+
+	&.offcanvas {
+		.offcanvas-menu {
+			right: 0;
+		}
+	}
+}
+
+.body-innerwrapper:after {
+	position: absolute;
+	top: 0;
+	width: 0;
+	height: 0;
+	background: rgba(0, 0, 0, 0.8);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	z-index: 999;
+}
+
+.offcanvas {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	.body-innerwrapper:after {
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+		-webkit-transition: opacity 0.5s;
+		transition: opacity 0.5s;
+	}
+
+	.offcanvas-menu {
+		opacity: 1;
+	}
+}
+
+.menu .nav-child.small {
+	font-size: inherit;
+}
+
+
+/*=========================================
+ *======= 	Menu Animation   ============
+ *=======================================*/
+@-webkit-keyframes spMenuFadeIn {
+  0% {
+  	opacity: 0;
+  }
+
+  100% {
+  	opacity: 1;
+  }
+}
+
+@keyframes spMenuFadeIn {
+  0% {
+  	opacity: 0;
+  }
+
+  100% {
+  	opacity: 1;
+  }
+}
+
+@-webkit-keyframes spMenuZoom {
+  0% {
+  	opacity: 0;
+  	-webkit-transform: scale(.8);
+  }
+
+  100% {
+  	opacity: 1;
+  	-webkit-transform: scale(1);
+  }
+}
+
+@keyframes spMenuZoom {
+  0% {
+  	opacity: 0;
+  	transform: scale(.8);
+  	-webkit-transform: scale(.8);
+  }
+
+  100% {
+  	opacity: 1;
+  	transform: scale(1);
+  	-webkit-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes spMenuFadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+  }
+}
+
+@keyframes spMenuFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

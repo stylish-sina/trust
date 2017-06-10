@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="Property Detail">
+		<message>
+			<![CDATA[Property Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>Property Detail</name>
+		<description>Property Detail</description>
+		<url>
+
+		</url>
+	</state>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_jux_real_estate/elements">
+			<field 
+				name="id" 
+				type="juxrealty"
+				default="0"
+				label="Select realty" 
+				description="Select a realty" />
+		</fieldset>
+	</fields>
+	<fields name="params">
+	</fields>
+</metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="Submit Realty">
+		<message>
+			<![CDATA[List Layout Description]]>
+		</message>
+	</layout>
+	<state>
+		<name>Submit Realty</name>
+		<description>Submit Realty Description</description>
+	</state>
+</metadata>

@@ -1,0 +1,6 @@
+-- --------------------------------------------------------
+--
+-- Update Table structure for table `#__juxrm_menus`
+--
+-- ALTER TABLE #__re_agents
+-- ADD package_limit varchar(100)  DEFAULT '' NULL;

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.3" client="site" method="upgrade">
+	<name>Helix3 Preset Option</name>
+	<author>JoomlaUX</author>
+	<creationDate>September 2015</creationDate>
+	<copyright>Copyright (C) 2012 - 2015 JoomlaUX. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@joomshaper.com</authorEmail>
+	<authorUrl>www.joomshaper.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Preset manager for Helix 3 based template.</description>
+	<files>
+		<filename module="mod_helix3_options">mod_helix3_options.php</filename>
+		<folder>assets</folder>
+		<filename>mod_helix3_options.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<!-- <field name="presets" type="text" label="Number of Preset" default="4" /> -->
+				<field name="template" type="text" label="Template Folder" default="jux_citilights" />
+				<field name="presets1" type="color" label="Preset 1's color" default="#22b8f0" />
+				<field name="presets2" type="color" label="Preset 2's color" default="#3d449a" />
+				<field name="presets3" type="color" label="Preset 3's color" default="#2bb673" />
+				<field name="presets4" type="color" label="Preset 4's color" default="#eb4947" />
+				<field name="background1" type="media" label="Background image 1" default="" />
+				<field name="background2" type="media" label="Background image 2" default="" />
+				<field name="background3" type="media" label="Background image 3" default="" />
+				<field name="background4" type="media" label="Background image 4" default="" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

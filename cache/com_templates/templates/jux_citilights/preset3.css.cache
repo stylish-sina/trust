@@ -1,47 +1,4 @@
-a:4:{s:4:"root";s:64:"C:\xampp\htdocs\trust\templates/jux_citilights/less/presets.less";s:8:"compiled";s:27412:".form-control {
-  display: block;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #555555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-.form-control:focus {
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,0.6);
-}
-.form-control::-moz-placeholder {
-  color: #999;
-  opacity: 1;
-}
-.form-control:-ms-input-placeholder {
-  color: #999;
-}
-.form-control::-webkit-input-placeholder {
-  color: #999;
-}
-.form-control[disabled],
-.form-control[readonly],
-fieldset[disabled] .form-control {
-  cursor: not-allowed;
-  background-color: #eeeeee;
-  opacity: 1;
-}
-textarea.form-control {
-  height: auto;
-}
-a {
+a:4:{s:4:"root";s:64:"C:\xampp\htdocs\trust\templates/jux_citilights/less/presets.less";s:8:"compiled";s:25993:"a {
   color: #f3c93a;
 }
 a:hover {
@@ -793,9 +750,6 @@ ul.pager li a {
   margin: 5px 0 27px 0;
   border-radius: 3px;
   cursor: pointer;
-  -webkit-transition: color 400ms, background-color 400ms;
-  -o-transition: color 400ms, background-color 400ms;
-  transition: color 400ms, background-color 400ms;
 }
 #offcanvas-toggler >i:hover {
   color: #fff;
@@ -840,9 +794,6 @@ ul.pager li a {
 }
 .offcanvas-menu .offcanvas-inner .sp-module ul > li a {
   border-bottom: 1px dotted #e8e8e8;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
   padding: 4px 20px;
 }
 .offcanvas-menu .offcanvas-inner .sp-module ul > li a:hover {
@@ -968,4 +919,4 @@ ul.pager li a {
     transform: none;
   }
 }
-";s:5:"files";a:3:{s:64:"C:\xampp\htdocs\trust\templates\jux_citilights\less\presets.less";i:1477887162;s:66:"C:\xampp\htdocs\trust\templates\jux_citilights\less\variables.less";i:1477887162;s:63:"C:\xampp\htdocs\trust\templates\jux_citilights\less\mixins.less";i:1477887162;}s:7:"updated";i:1497120484;}
+";s:5:"files";a:15:{s:73:"C:\xampp\htdocs\trust\templates\jux_citilights\less\legacy\bootstrap.less";i:1477887162;s:73:"C:\xampp\htdocs\trust\templates\jux_citilights\less\legacy\variables.less";i:1477887162;s:70:"C:\xampp\htdocs\trust\templates\jux_citilights\less\legacy\mixins.less";i:1477887162;s:68:"C:\xampp\htdocs\trust\templates\jux_citilights\less\legacy\grid.less";i:1477887162;s:69:"C:\xampp\htdocs\trust\templates\jux_citilights\less\legacy\forms.less";i:1477887162;s:69:"C:\xampp\htdocs\trust\templates\jux_citilights\less\legacy\wells.less";i:1477887162;s:73:"C:\xampp\htdocs\trust\templates\jux_citilights\less\legacy\accordion.less";i:1477887162;s:91:"C:\xampp\htdocs\trust\templates\jux_citilights\less\legacy\responsive-767px-max.joomla.less";i:1477887162;s:63:"C:\xampp\htdocs\trust\templates\jux_citilights\less\master.less";i:1477887162;s:66:"C:\xampp\htdocs\trust\templates\jux_citilights\less\variables.less";i:1477887162;s:63:"C:\xampp\htdocs\trust\templates\jux_citilights\less\mixins.less";i:1477887162;s:64:"C:\xampp\htdocs\trust\templates\jux_citilights\less\icomoon.less";i:1477887162;s:61:"C:\xampp\htdocs\trust\templates\jux_citilights\less\menu.less";i:1477887162;s:62:"C:\xampp\htdocs\trust\templates\jux_citilights\less\theme.less";i:1477887162;s:64:"C:\xampp\htdocs\trust\templates\jux_citilights\less\presets.less";i:1477887162;}s:7:"updated";i:1497169365;}
